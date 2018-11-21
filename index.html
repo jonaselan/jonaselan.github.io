@@ -29,10 +29,10 @@
       <div class="list-inline">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger active" href="index.html">Português</a>
+              <a class="nav-link" href="index.html" id="portuguese">Português</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="index-en.html">Inglês</a>
+              <a class="nav-link" href="index-en.html">Inglês</a>
             </li>
           </ul>
       </div>
@@ -365,7 +365,11 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-
+    <script>
+        $(document).ready(() => {
+          $('#portuguese').addClass('active');
+        });
+      </script>
   </body>
 
 </html>
