@@ -1,7 +1,13 @@
+/*!
+ * Start Bootstrap - Jonas Resume v5.0.2 ()
+ * Copyright 2013-2019 Jonas Elan
+ * Licensed under MIT (https://github.com/BlackrockDigital/jonas-resume/blob/master/LICENSE)
+ */
+
 body {
   font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   padding-top: 54px;
-  color: #868e96;
+  color: #74777a;
 }
 
 @media (min-width: 992px) {
@@ -20,7 +26,7 @@ h6 {
   font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-weight: 700;
   text-transform: uppercase;
-  color: #343a40;
+  color: #373b3f;
 }
 
 h1 {
@@ -52,7 +58,7 @@ p.lead {
   display: inline-block;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: #74777a;
   color: #fff !important;
   border-radius: 100%;
   text-align: center;
@@ -66,7 +72,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #BD5D38;
+  background-color: #373b3f;
 }
 
 .dev-icons {
@@ -74,7 +80,7 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  color: #373b3f;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -84,7 +90,7 @@ p.lead {
 }
 
 #sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
+  outline-color: #5b6168;
 }
 
 @media (min-width: 992px) {
@@ -170,17 +176,76 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: #373b3f !important;
 }
 
 .text-primary {
-  color: #BD5D38 !important;
+  color: #373b3f !important;
 }
 
 a {
-  color: #BD5D38;
+  color: #373b3f;
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: #131516;
+}
+
+.typewriter {
+  width: 600px;
+}
+
+.typewriter h1 {
+  font-family: monospace;
+  /* Web-safe typewriter-like font */
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  -webkit-animation: typing 3.5s steps(30, end), blinking-cursor 0.65s step-end infinite;
+  animation: typing 3.5s steps(30, end), blinking-cursor 0.65s step-end infinite;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blinking-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@keyframes blinking-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
