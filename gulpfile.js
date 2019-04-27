@@ -104,12 +104,10 @@ gulp.task('js:minify', function() {
 gulp.task('js', ['js:minify']);
 
 gulp.task('server', function() {
-  gulp.src('public')
+  gulp.src('./')
     .pipe(server({
       open: true,
-      livereload: true,
-      directoryListing: false,
-      port: 6000,
+      fallback: 'index.html'
     }));
 });
 
