@@ -15,7 +15,10 @@
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Jura|Ubuntu+Mono" rel="stylesheet">
+    
+    <!-- Icons -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
@@ -66,7 +69,6 @@
     <div class="container-fluid p-0">
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-            <div id="sim"></div>
             <div class="typewriter">
                 <h1 class="mb-0">Jonas Elan</h1>
             </div>          
@@ -231,34 +233,39 @@
           <div class="subheading mb-3">Básico</div>
           <ul class="list-inline dev-icons">
             <li class="list-inline-item">
-              <i class="fab fa-html5"></i>
+                <i class="devicon-html5-plain-wordmark"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-css3-alt"></i>
+                <i class="devicon-css3-plain-wordmark"></i>
             </li>
             <li class="list-inline-item">
-              <i class="fab fa-js-square"></i>
+              <i class="devicon-javascript-plain"></i>
             </li>
           </ul>
 
           <div class="subheading mb-3">Backend</div>
           <ul class="list-inline dev-icons">
             <li class="list-inline-item">
-              <i class="fab fa-laravel"></i>
+                <i class="devicon-laravel-plain-wordmark"></i>
             </li>    
             <li class="list-inline-item">
-              <img src="img/rails.png" style="height: 55px;" alt="">
-            </li>          
+              <i class="devicon-rails-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+                <i class="devicon-nodejs-plain"></i>
+              </li>          
           </ul>
 
           <div class="subheading mb-3">Frontend</div>
           <ul class="list-inline dev-icons">
             <li class="list-inline-item">
-              <i class="fab fa-vuejs"></i>
+                <i class="devicon-vuejs-plain-wordmark"></i>
             </li>
-            
             <li class="list-inline-item">
-              <i class="fab fa-sass"></i>
+                <i class="devicon-sass-original"></i>
+            </li>
+            <li class="list-inline-item">
+                <i class="devicon-bootstrap-plain-wordmark"></i>
             </li>
           </ul>
 
@@ -266,9 +273,6 @@
           <ul class="list-inline dev-icons">
             <li class="list-inline-item">
               <i class="fab fa-npm"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-composer"></i>
             </li>
             <li class="list-inline-item">
               <i class="fab fa-gulp"></i>
@@ -281,17 +285,20 @@
           <div class="subheading mb-3">Banco de dados</div>
           <ul class="list-inline dev-icons">
             <li class="list-inline-item">
-              <img src="img/mongodb.png" style="height: 55px;" alt="">
+                <i class="devicon-mongodb-plain-wordmark"></i>
             </li>
             <li class="list-inline-item">
-              <img src="img/postgresql.svg" style="height: 55px;" alt="">
+                <i class="devicon-postgresql-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+                <i class="devicon-mysql-plain-wordmark"></i>
             </li>
           </ul>
 
           <div class="subheading mb-3">Outros</div>
           <ul class="list-inline dev-icons">  
             <li class="list-inline-item">
-              <i class="fab fa-node-js"></i>
+              <i class="devicon-redis-plain-wordmark"></i>
             </li>
             <li class="list-inline-item">
               <i class="fab fa-docker"></i>
@@ -358,17 +365,6 @@
       </section>
 
     </div>
-
-    <!-- Load components -->
-    <script>
-        var link = document.querySelector('link[rel="import"]');
-    
-        // Clone the <template> in the import.
-        var template = link.import.querySelector('template');
-        var clone = document.importNode(template.content, true);
-    
-        document.querySelector('#sim').appendChild(clone);
-      </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
