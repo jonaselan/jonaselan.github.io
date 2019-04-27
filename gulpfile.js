@@ -7,6 +7,7 @@ var uglify = require('gulp-uglify');
 var autoprefixer = require('gulp-autoprefixer');
 var pkg = require('./package.json');
 var browserSync = require('browser-sync').create();
+var server = require('gulp-webserver');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -102,20 +103,21 @@ gulp.task('js:minify', function() {
 // JS
 gulp.task('js', ['js:minify']);
 
-// Default task
-gulp.task('default', ['css', 'js', 'vendor']);
-
-// Configure the browserSync task
-gulp.task('browserSync', function() {
-  browserSync.init({
-    server: {
-      baseDir: "./"
-    }
-  });
+gulp.task('server', function() {
+  gulp.src('public')
+    .pipe(server({
+      open: true,
+      livereload: true,
+      directoryListing: false,
+      port: 6000,
+    }));
 });
 
+// Default task
+gulp.task('default', ['css', 'js', 'vendor', 'server']);
+
 // Dev task
-gulp.task('dev', ['css', 'js', 'browserSync'], function() {
+gulp.task('dev', ['css', 'js'], function() {
   gulp.watch('./scss/*.scss', ['css']);
   gulp.watch('./js/*.js', ['js']);
   gulp.watch('./*.html', browserSync.reload);
