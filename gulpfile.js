@@ -112,7 +112,7 @@ gulp.task('server', function() {
 });
 
 // Default task
-gulp.task('default', ['css', 'js', 'vendor', 'server']);
+gulp.task('default', ['css', 'js', 'vendor']);
 
 // Dev task
 gulp.task('dev', ['css', 'js'], function() {

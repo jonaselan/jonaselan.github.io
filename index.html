@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Jonas Elan">
+    <link rel="import" href="components/skills.html">
 
     <title>Jonas Elan - Desenvolvedor Full Stack</title>
 
@@ -65,6 +66,7 @@
     <div class="container-fluid p-0">
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
+            <div id="sim"></div>
             <div class="typewriter">
                 <h1 class="mb-0">Jonas Elan</h1>
             </div>          
@@ -356,6 +358,17 @@
       </section>
 
     </div>
+
+    <!-- Load components -->
+    <script>
+        var link = document.querySelector('link[rel="import"]');
+    
+        // Clone the <template> in the import.
+        var template = link.import.querySelector('template');
+        var clone = document.importNode(template.content, true);
+    
+        document.querySelector('#sim').appendChild(clone);
+      </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>

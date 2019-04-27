@@ -1,5 +1,5 @@
 /*!
- * Start Bootstrap - Jonas Resume v5.0.2 ()
+ * Start Bootstrap - Jonas Resume v5.0.2 (https://github.com/jonaselan/jonas-resume#readme)
  * Copyright 2013-2019 Jonas Elan
  * Licensed under MIT (https://github.com/BlackrockDigital/jonas-resume/blob/master/LICENSE)
  */
