@@ -55,3 +55,47 @@
     }
   }
 }
+
+@mixin nav-button-style {
+  background-color: $primary;
+  color: $white !important;
+  border-radius: 100%;
+  transition: 0.6s;
+  line-height: 3.5rem;
+  font-size: 1.5rem;
+  width: 3.5rem;
+  text-align: center;
+  display: inline-block;
+}
+
+.social-icons {
+  a {
+    @include nav-button-style;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background-color: $light-gray;
+    }
+  }
+}
+
+.stack-overflow-section {
+  margin-bottom: 15px;
+
+  .reputation-text {
+    line-height: initial;
+    font-size: 20px;
+  }
+
+  a {
+    @include nav-button-style;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background-color: $light-gray;
+    }
+  }
+}

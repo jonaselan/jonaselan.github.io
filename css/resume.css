@@ -54,29 +54,6 @@ p.lead {
   font-size: 1.5rem;
 }
 
-.social-icons a {
-  display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #74777a;
-  color: #fff !important;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 3.5rem;
-  margin-right: 1rem;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-}
-
-.social-icons a:last-child {
-  margin-right: 0;
-}
-
-.social-icons a:hover {
-  background-color: #373b3f;
-}
-
 .dev-icons {
   font-size: 3rem;
 }
@@ -151,6 +128,57 @@ p.lead {
     -webkit-transition: 0.6s;
     transition: 0.6s;
   }
+}
+
+.social-icons a {
+  background-color: #373b3f;
+  color: #fff !important;
+  border-radius: 100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  line-height: 3.5rem;
+  font-size: 1.5rem;
+  width: 3.5rem;
+  text-align: center;
+  display: inline-block;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: #74777a;
+}
+
+.stack-overflow-section {
+  margin-bottom: 15px;
+}
+
+.stack-overflow-section .reputation-text {
+  line-height: initial;
+  font-size: 20px;
+}
+
+.stack-overflow-section a {
+  background-color: #373b3f;
+  color: #fff !important;
+  border-radius: 100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  line-height: 3.5rem;
+  font-size: 1.5rem;
+  width: 3.5rem;
+  text-align: center;
+  display: inline-block;
+}
+
+.stack-overflow-section a:last-child {
+  margin-right: 0;
+}
+
+.stack-overflow-section a:hover {
+  background-color: #74777a;
 }
 
 section.resume-section {
