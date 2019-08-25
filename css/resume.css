@@ -65,6 +65,8 @@ p.lead {
   font-size: 1.5rem;
   line-height: 3.5rem;
   margin-right: 1rem;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .social-icons a:last-child {
@@ -146,6 +148,8 @@ p.lead {
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
   }
 }
 
