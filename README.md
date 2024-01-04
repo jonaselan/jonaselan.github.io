@@ -1,4 +1,4 @@
-# Resume
+# My Resume
 
 ## Install
 
